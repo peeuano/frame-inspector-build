@@ -1,0 +1,14 @@
+name: Build Frame Inspector
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download source
+        uses: actions/checkout@v4
+
+      - name: Build mod
+        uses: geode-sdk/build-geode-mod@main
